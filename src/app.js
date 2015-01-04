@@ -10,6 +10,9 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/', {
             templateUrl : 'pages/home.html'
         })
+        .when('/get-started', {
+            templateUrl : 'pages/get-started.html'
+        })
         .otherwise({redirectTo: '/not-found'});
 
     $locationProvider.html5Mode(true);
