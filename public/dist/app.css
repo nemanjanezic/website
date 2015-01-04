@@ -6,3 +6,4 @@ ul li{float:left;padding:10px 15px}
 ul li:first-child{padding-left:0!important}
 .ng-scope{width:100%;float:left}
 #logo{display:block;border:3px solid #fff;width:286px;padding:10px}
+#logo:hover{color:#16a085;border-color:#16a085;cursor:pointer}
