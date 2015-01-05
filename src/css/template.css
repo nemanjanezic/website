@@ -6,7 +6,7 @@
 #home {
     height: 800px;
     width: 100%;
-    background: url(/img/bg/2.jpg) no-repeat top center fixed;
+    background: url(/img/bg/2.jpg) no-repeat top center/cover fixed;
 
 }
 
@@ -39,6 +39,8 @@ header {
     background-color: white;
 }
 header .logo {
+    float: left;
+    padding: 0 10px;
     background-color: #63c6ae;
 }
 
