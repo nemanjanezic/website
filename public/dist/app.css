@@ -1,9 +1,13 @@
 .starter-template{padding:40px 15px;text-align:center}
 html{background:url(/img/bg/2.jpg) center center/cover no-repeat fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}
 body{color:#fff;background-color:transparent!important}
-ul{list-style:none;padding-left:0;margin-left:0}
-ul li{float:left;padding:10px 15px}
+ul{list-style:none;margin:0;padding:0 0 0 40px;float:left}
+ul li{float:left}
 ul li:first-child{padding-left:0!important}
 .ng-scope{width:100%;float:left}
-#logo{display:block;border:3px solid #fff;width:286px;padding:10px}
+header{height:84px;background-color:#fff}
+header .logo{background-color:#63c6ae}
+#logo{display:block;border:3px solid #fff;width:286px;padding:10px;float:right;margin:10px 0}
 #logo:hover{color:#16a085;border-color:#16a085;cursor:pointer}
+nav ul li a.active{color:#63c6ae}
+nav ul li a{display:block;padding:0 15px;text-transform:uppercase;color:#586165;font-size:16px;line-height:83px;font-weight:600;letter-spacing:-.02em;transition:.5s ease;-moz-transition:.5s ease;-webkit-transition:.5s ease;-o-transition:.5s ease}

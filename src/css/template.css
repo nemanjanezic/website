@@ -18,13 +18,13 @@ body {
 
 ul {
     list-style: none;
-    padding-left: 0;
-    margin-left: 0;
+    margin: 0;
+    padding: 0 0 0 40px;
+    float: left;
 }
 
 ul li {
     float: left;
-    padding: 10px 15px;
 }
 ul li:first-child {
     padding-left: 0 !important;
@@ -35,15 +35,44 @@ ul li:first-child {
     float: left;
 }
 
+header {
+    height: 84px;
+    background-color: white;
+}
+header .logo {
+    background-color: #63c6ae;
+}
+
 #logo {
     display: block;
     border: 3px solid white;
     width: 286px;
     padding: 10px 10px;
+    float: right;
+    margin: 10px 0;
 }
 
 #logo:hover {
     color: #16a085;
     border-color: #16a085;
     cursor: pointer;
+}
+
+nav ul li a.active {
+    color: #63c6ae;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #586165;
+    font-size: 16px;
+    line-height: 83px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
 }
