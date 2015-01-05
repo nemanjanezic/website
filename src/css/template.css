@@ -3,12 +3,11 @@
     text-align: center;
 }
 
-html {
-    background: url(/img/bg/2.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#home {
+    height: 800px;
+    width: 100%;
+    background: url(/img/bg/2.jpg) no-repeat top center/cover fixed;
+
 }
 
 body {
