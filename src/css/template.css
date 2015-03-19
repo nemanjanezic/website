@@ -7,11 +7,13 @@
     height: 800px;
     width: 100%;
     background: url(/img/bg/2.jpg) no-repeat top center/cover fixed;
-
+    color: #ffffff;
 }
 
+
+
 body {
-    color: #ffffff;
+    color: #000000;
     background-color: transparent !important;
 }
 
@@ -45,6 +47,7 @@ header .logo {
 }
 
 #logo {
+    color: #ffffff;
     display: block;
     border: 3px solid white;
     padding: 10px 10px;
