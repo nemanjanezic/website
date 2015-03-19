@@ -54,6 +54,11 @@ header .logo {
     margin: 10px 0;
 }
 
+.lade {
+    width: 640px;
+    margin: 320px auto 0;
+}
+
 #logo:hover {
     color: #16a085;
     border-color: #16a085;

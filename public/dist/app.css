@@ -8,6 +8,7 @@ ul li:first-child{padding-left:0!important}
 header{height:84px;background-color:#fff}
 header .logo{float:left;padding:0 10px;background-color:#63c6ae}
 #logo{color:#fff;display:block;border:3px solid #fff;padding:10px;margin:10px 0}
+.lade{width:640px;margin:320px auto 0}
 #logo:hover{color:#16a085;border-color:#16a085;cursor:pointer}
 nav ul li a.active{color:#63c6ae}
 nav ul li a{display:block;padding:0 15px;text-transform:uppercase;color:#586165;font-size:16px;line-height:83px;font-weight:600;letter-spacing:-.02em;transition:.5s ease;-moz-transition:.5s ease;-webkit-transition:.5s ease;-o-transition:.5s ease}
