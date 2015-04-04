@@ -1,5 +1,5 @@
 .starter-template{padding:40px 15px;text-align:center}
-#home{height:800px;width:100%;background:url(/img/bg/3.jpg) top/cover no-repeat fixed;color:#fff;position:absolute}
+#home{height:800px;width:100%;background-color:#000;color:#fff;position:absolute}
 #svg-logo{height:85%;width:auto;position:absolute;top:50%;left:10%;margin-top:-332px}
 body{color:#000;background-color:transparent!important}
 ul{list-style:none;margin:0;padding:0 0 0 40px;float:left}

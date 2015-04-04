@@ -6,7 +6,8 @@
 #home {
     height: 800px;
     width: 100%;
-    background: url(/img/bg/3.jpg) no-repeat top center/cover fixed;
+    /*background: url(/img/bg/3.jpg) no-repeat top center/cover fixed;*/
+    background-color: #000000;
     color: #ffffff;
     position: absolute;
 }
