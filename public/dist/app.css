@@ -2,9 +2,9 @@
 #home{height:800px;width:100%;background-color:#000;color:#fff;position:absolute}
 #svg-logo{height:85%;width:auto;position:absolute;top:50%;left:10%;margin-top:-332px}
 body{color:#000;background-color:transparent!important}
-ul{list-style:none;margin:0;padding:0 0 0 40px;float:left}
-ul li{float:left}
-ul li:first-child{padding-left:0!important}
+header ul{list-style:none;margin:0;padding:0 0 0 40px;float:left}
+header ul li{float:left}
+header ul li:first-child{padding-left:0!important}
 .ng-scope{width:100%;float:left}
 header{height:84px;background-color:#fff}
 header .logo{float:left;padding:0 10px;background-color:#63c6ae}
