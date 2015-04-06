@@ -13,6 +13,9 @@ header .logo{float:left;padding:0 10px;background-color:#63c6ae}
 #logo:hover{color:#16a085;border-color:#16a085;cursor:pointer}
 nav ul li a.active{color:#63c6ae}
 nav ul li a{display:block;padding:0 15px;text-transform:uppercase;color:#586165;font-size:16px;line-height:83px;font-weight:600;letter-spacing:-.02em;transition:.5s ease;-moz-transition:.5s ease;-webkit-transition:.5s ease;-o-transition:.5s ease}
+.peter-river-flat-button{padding:10px 15px;position:relative;vertical-align:top;display:inline-block;font-size:30px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#3498db;border:0;border-bottom:2px solid #2a8bcc;cursor:pointer;-webkit-box-shadow:inset 0 -2px #2a8bcc;box-shadow:inset 0 -2px #2a8bcc}
+.peter-river-flat-button:hover{text-decoration:none}
+.peter-river-flat-button:active{top:1px;outline:0;-webkit-box-shadow:none;box-shadow:none}
 undefined undefinedhtml{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
