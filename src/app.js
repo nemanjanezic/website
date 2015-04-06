@@ -45,6 +45,15 @@ app.config(function($routeProvider, $locationProvider) {
                 }
             }
         })
+        .when('/about', {
+            templateUrl : 'pages/about.html'
+        })
+        .when('/learn', {
+            templateUrl : 'pages/learn.html'
+        })
+        .when('/not-found', {
+            templateUrl : 'pages/not-found.html'
+        })
         .otherwise({redirectTo: '/not-found'});
 
     $locationProvider.html5Mode(true);
