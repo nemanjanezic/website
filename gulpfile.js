@@ -10,7 +10,7 @@ var jsPath = [
     './src/vendor/angular-route/angular-route.js',
     './src/vendor/angular-resource/angular-resource.js',
     './src/lib/highlight.pack.js',
-    './bower_components/jquery/dist/jquery.min.js',
+    //'./src/vendor/jquery/dist/jquery.min.js',
     './src/app.js'
 ];
 
@@ -42,6 +42,7 @@ gulp.task('html-pages-min', function() {
 
 var cssPath = [
     './src/css/template.css',
+    './src/lib/bootstrap.css',
     './node_modules/highlight.js/styles/xcode.css'
 ];
 

@@ -15,9 +15,13 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/get-started', {
             templateUrl : 'pages/get-started.html',
             controller: function($scope) {
-                $('.hljs').each(function(i, block) {
-                    window.hljs.highlightBlock(block);
-                });
+                var hljs_nodes = document.querySelectorAll( 'pre code' );
+
+                for( var i = 0, len = hljs_nodes.length; i < len; i++ ) {
+                    var element = hljs_nodes[i];
+
+                    hljs.highlightBlock(element);
+                }
             }
         })
         .otherwise({redirectTo: '/not-found'});
