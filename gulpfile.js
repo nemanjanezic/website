@@ -9,6 +9,8 @@ var jsPath = [
     './src/vendor/angular/angular.js',
     './src/vendor/angular-route/angular-route.js',
     './src/vendor/angular-resource/angular-resource.js',
+    './src/lib/highlight.pack.js',
+    './bower_components/jquery/dist/jquery.min.js',
     './src/app.js'
 ];
 
@@ -34,12 +36,13 @@ gulp.task('html-pages-min', function() {
         htmlDst = './public/pages/';
 
     gulp.src(htmlSrc)
-        .pipe(minifyHTML({empty: true}))
+        //.pipe(minifyHTML({empty: true}))
         .pipe(gulp.dest(htmlDst));
 });
 
 var cssPath = [
-    './src/css/template.css'
+    './src/css/template.css',
+    './node_modules/highlight.js/styles/xcode.css'
 ];
 
 gulp.task('css', function () {
