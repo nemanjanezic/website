@@ -41,6 +41,15 @@ app.config(function($routeProvider, $locationProvider) {
                 for( var i = 0, len = hljs_nodes.length; i < len; i++ ) {
                     var element = hljs_nodes[i];
 
+                    if (typeof element.innerHTML.trim === 'function' ) {
+                        element.innerHTML = element.innerHTML.trim();
+                    }
+
+                    // Now escape html unless prevented by author
+                    if (! element.hasAttribute( 'data-noescape' )) {
+                        element.innerHTML = element.innerHTML.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+                    }
+
                     hljs.highlightBlock(element);
                 }
             }

@@ -1,11 +1,11 @@
 <div class="container page">
-	<h2>Get started</h2>
+    <h2>Get started</h2>
 
-	<h3>1. Install Owl framework</h3>
+    <h3>1. Install Owl framework</h3>
 
-	<h4>1.1 Install from generated sources</h4>
+    <h4>1.1 Install from generated sources</h4>
 
-<pre class="hljs bash">
+<pre class="bash">
 <code>
 git clone https://github.com/owl-framework/owl
 cd owl/ext
@@ -14,23 +14,23 @@ sudo ./install
 </pre>
 
 
-	<h3>2. Create a project</h3>
+    <h3>2. Create a project</h3>
 
-	First you need choose, what an application you will build.
+    First you need choose, what an application you will build.
 
 
-	<h2>Vagrant Boxes</h2>
+    <h2>Vagrant Boxes</h2>
 
-	<h3>Box #1</h3>
+    <h3>Box #1</h3>
 
-	<ul>
-		<li>Ubuntu x64</li>
-		<li>PHP 5.6</li>
-		<li>Zephir dev-master</li>
-		<li>Owl dev-master</li>
-	</ul>
+    <ul>
+        <li>Ubuntu x64</li>
+        <li>PHP 5.6</li>
+        <li>Zephir dev-master</li>
+        <li>Owl dev-master</li>
+    </ul>
 
-<pre class="hljs bash">
+<pre class="bash">
 <code>
 git clone https://github.com/owl-framework/vagrant ./owl-vagrant
 cd owl-vagrant
@@ -39,4 +39,88 @@ vagrant up
 </code>
 </pre>
 
+    <h3>Benchmarks</h3>
+
+<h4>It's alpha... But it works fast</h4>
+
+<p>Static router without parameter passing.</p>
+
+<pre class="bash">
+<code>
+ab -c 20 -n 5000 http://owl.ab.dmtry.me/users
+Document Path: /users
+Document Length: 228 bytes
+
+Concurrency Level: 20
+Time taken for tests: 0.601 seconds
+Complete requests: 5000
+Failed requests: 0
+Total transferred: 1905000 bytes
+HTML transferred: 1140000 bytes
+Requests per second: 8315.15 [#/sec] (mean)
+Time per request: 2.405 [ms] (mean)
+Time per request: 0.120 [ms] (mean, across all concurrent requests)
+Transfer rate: 3093.82 [Kbytes/sec] received
+
+Connection Times (ms)
+min mean[+/-sd] median max
+Connect: 0 0 0.0 0 0
+Processing: 1 2 2.1 2 46
+Waiting: 1 2 2.1 2 46
+Total: 1 2 2.1 2 46
+
+Percentage of the requests served within a certain time (ms)
+50% 2
+66% 2
+75% 3
+80% 3
+90% 5
+95% 6
+98% 8
+99% 9
+100% 46 (longest request)
+</code>
+</pre>
+
+<p>Dynamic route with parameter passing "slow".</p>
+
+<pre class="bash">
+<code>
+ab -c 20 -n 5000 http://owl.ab.dmtry.me/users/1
+Server Hostname:        owl.ab.dmtry.me
+Server Port:            80
+
+Document Path:          /users/1
+Document Length:        72 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.682 seconds
+Complete requests:      5000
+Failed requests:        0
+Total transferred:      1125000 bytes
+HTML transferred:       360000 bytes
+Requests per second:    7334.39 [#/sec] (mean)
+Time per request:       2.727 [ms] (mean)
+Time per request:       0.136 [ms] (mean, across all concurrent requests)
+Transfer rate:          1611.56 [Kbytes/sec] received
+
+Connection Times (ms)
+min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1    3   3.1      2     108
+Waiting:        1    3   3.1      2     108
+Total:          1    3   3.1      2     108
+
+Percentage of the requests served within a certain time (ms)
+50%      2
+66%      3
+75%      3
+80%      3
+90%      4
+95%      6
+98%      9
+99%     12
+100%    108 (longest request)
+</code>
+</pre>
 </div>
