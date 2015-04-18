@@ -4,12 +4,21 @@
 }
 
 #home {
-    height: 800px;
+    /*height: 420px;*/
     width: 100%;
     /*background: url(/img/bg/3.jpg) no-repeat top center/cover fixed;*/
     background-color: #000000;
     color: #ffffff;
-    position: absolute;
+    padding: 80px;
+}
+
+.lade {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.bg-gray {
+    background-color: #f5f5f5;
 }
 
 #svg-logo {
@@ -67,11 +76,6 @@ header .logo {
     font-size: 36px;
 }
 
-.lade {
-    width: 640px;
-    margin: 320px auto 0;
-}
-
 #logo:hover {
     color: #16a085;
     border-color: #16a085;
@@ -114,7 +118,7 @@ nav ul li a {
     box-shadow: inset 0 -2px #2a8bcc;
     /*-webkit-appearance: button;*/
 }
-}
+
 .peter-river-flat-button:hover {
     text-decoration: none;
 }
@@ -123,4 +127,15 @@ nav ul li a {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+/** */
+
+.bg-dark {
+    color: white;
+    background-color: #222222;
+}
+
+section {
+    padding: 100px 0;
 }
