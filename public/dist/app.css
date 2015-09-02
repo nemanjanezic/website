@@ -1347,14 +1347,14 @@ td.visible-print,th.visible-print{display:table-cell!important}}
 @media print{.visible-print-inline-block{display:inline-block!important}}
 @media print{.hidden-print{display:none!important}}
 .hljs{display:block;overflow-x:auto;padding:.5em;background:#fff;color:#000;-webkit-text-size-adjust:none}
-.hljs-comment,.hljs-javadoc{color:#006a00}
+.hljs-comment{color:#006a00}
 .hljs-keyword,.hljs-literal,.nginx .hljs-title{color:#aa0d91}
 .hljs-list .hljs-title,.hljs-name,.hljs-request,.hljs-status,.hljs-tag .hljs-title,.hljs-winutils,.http .hljs-title,.method,.setting .hljs-value,.tex .hljs-command{color:#008}
 .hljs-envvar,.tex .hljs-special{color:#660}
 .hljs-string{color:#c41a16}
 .apache .hljs-cbracket,.hljs-attr_selector,.hljs-cdata,.hljs-date,.hljs-filter .hljs-argument,.hljs-regexp,.hljs-tag .hljs-value{color:#080}
 .coffeescript .hljs-attribute,.css .hljs-function,.hljs-decorator,.hljs-function .hljs-title,.hljs-hexcolor,.hljs-number,.hljs-pi,.hljs-prompt,.hljs-rule .hljs-value,.hljs-shebang,.hljs-sub .hljs-identifier,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-tag,.hljs-tag .hljs-keyword,.ini .hljs-title{color:#1c00cf}
-.clojure .hljs-attribute,.hljs-built_in,.hljs-class .hljs-id,.hljs-class .hljs-title,.hljs-dartdoc,.hljs-doctype,.hljs-javadoctag,.hljs-params,.hljs-phpdoc,.hljs-tag .hljs-attribute,.hljs-type,.hljs-typename,.hljs-yardoctag,.setting,.smalltalk .hljs-class{color:#5c2699}
+.clojure .hljs-attribute,.hljs-built_in,.hljs-class .hljs-id,.hljs-class .hljs-title,.hljs-doctype,.hljs-params,.hljs-tag .hljs-attribute,.hljs-type,.hljs-typename,.setting,.smalltalk .hljs-class{color:#5c2699}
 .hljs-variable{color:#3f6e74}
 .css .hljs-tag,.hljs-pseudo,.hljs-rule .hljs-property,.hljs-subst{color:#000}
 .css .hljs-class,.css .hljs-id{color:#9b703f}
@@ -1367,5 +1367,5 @@ td.visible-print,th.visible-print{display:table-cell!important}}
 .diff .hljs-change{background-color:#bccff9}
 .hljs-addition{background-color:#baeeba}
 .hljs-deletion{background-color:#ffc8bd}
-.hljs-comment .hljs-yardoctag{font-weight:700}
+.hljs-comment .hljs-doctag{font-weight:700}
 .method .hljs-id{color:#000}
